@@ -1,0 +1,17 @@
+extends layout
+
+block content
+
+    h1 CLASSES 
+
+        table.w3-table 
+            tr 
+                th Codigo 
+                th Titulo 
+            each c in classe
+                tr 
+                    td 
+                        a(href='/classes/'+c.codigo)=c.codigo
+                    td= c.titulo
+
+    a(href="/") Pagina Inicial

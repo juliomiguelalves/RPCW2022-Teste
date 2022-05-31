@@ -1,0 +1,27 @@
+extends layout
+
+block content
+    h1= c.titulo
+    p Nivel: #{c.nivel}
+    p Codigo: #{c.codigo}
+    p Descricao: #{c.descricao}
+    p Status: #{c.status}
+    if c.filhos.length > 0
+        table.w3-table 
+            tr 
+                th Codigo 
+                th Titulo 
+            each f in c.filhos
+                tr 
+                    td 
+                        a(href='/classes/'+f.codigo)=f.codigo 
+                    td= f.titulo 
+    if c.nivel==3 && c.termosInd.length >0
+        table.w3-table 
+            tr 
+                th Termo 
+            each t in c.termosInd
+                tr 
+                    td 
+                        a(href='/termosIndice'+t.idTI.split("#").pop())=t.termo 
+    a(href="/") Pagina Inicial

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doc>
+    <meta>
+		<titulo> Teste RPCW2022</titulo>
+		<data> 2022-05-31</data>
+		<autor>
+			<id>PG47390</id>
+			<nome>Júlio Miguel de Sá Lima Magalhães Alves</nome>
+		</autor>
+		<uc>
+			<sigla>RPCW2022</sigla>
+			<nome>Representação e Processamento de Conhecimento na Web</nome>
+		</uc>
+	</meta>
+    <resultados>
+		<p>Para o tratamento de dados, decidi separar manualmente o dataset em 2. Coloquei num dataset a informaão relativa às cidades e noutro a informação relativa às ligações.
+            Após esta separação, utilizei o comando "mongoimport --db MAPA2022 --collection cidades cidades.json --jsonArray" e "mongoimport --db MAPA2022 --collection ligacoes ligacoes.json --jsonArray"</p> 
+        <p> Quantos processos (nível 3) e quais são (obtem uma lista em JSON; podes concatenar sublistas invocando várias queries), pertencentes à descendência da classe 750? 3 </p>
+        <p>Quantas entidades estão catalogadas? 638</p>
+        <p>Quantos processos (classes de nível 3) se encontram na descendência de 750.20? 7</p>
+        <p>Quantos processos (classes de nível 3) estão relacionados com 750.20.600? 0</p>
+        <p> Para executar as aplicacoes, basta correr os comandos "npm i", seguido de "npm start". Ambas as aplicacoes ficam à escuta na porta 5000</p>
+        <p> Para obter o token de acesso ao clav, é feito um pedido de post login sempre que se acede a alguma rota, pelo que não é necessário armazenar o token </>
+        <url> ex1/</url>
+        <p> Contém a resolução do ex1</p>
+        <url> ex2/</url>
+        <p> Contém a resolução do ex2</p>
+	</resultados>
+
+</doc>
